@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Zakhrafah Vector Studio V10 Smooth Vector Fill</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfNCIgZGF0YS1uYW1lPSJMYXllciA0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDYuMTEgNDQ4Ljg2IiBmaWxsPSIjM0E2NjhCIj4KICA8cGF0aCBkPSJNMCwwdjQ0OC44Nmg0MDYuMTFWMEgwWk0zODQuNzQsNDI3LjQ5SDIxLjM4VjIxLjM3aDM2My4zNnY0MDYuMTJaIi8+CiAgPHBhdGggZD0iTTQyLjc1LDQyLjc1djY0LjEyaDMyMC42MlY0Mi43NUg0Mi43NVpNMzQxLjk5LDg1LjVINjQuMTJ2LTIxLjM4aDI3Ny44N3YyMS4zOFoiLz4KICA8cmVjdCB4PSI0Mi43NSIgeT0iMTI4LjI0IiB3aWR0aD0iMjEuMzciIGhlaWdodD0iMjEuMzciLz4KICA8cmVjdCB4PSI4NS41IiB5PSIxMjguMjQiIHdpZHRoPSIyMS4zNyIgaGVpZ2h0PSIyMS4zNyIvPgogIDxyZWN0IHg9IjE3MSIgeT0iMTI4LjI0IiB3aWR0aD0iMjEuMzciIGhlaWdodD0iMjEuMzciLz4KICA8cmVjdCB4PSIyOTkuMjQiIHk9IjEyOC4yNCIgd2lkdGg9IjIxLjM3IiBoZWlnaHQ9IjIxLjM3Ii8+CiAgPHJlY3QgeD0iMzQxLjk5IiB5PSIxMjguMjQiIHdpZHRoPSIyMS4zNyIgaGVpZ2h0PSIyMS4zNyIvPgogIDxwb2x5Z29uIHBvaW50cz0iMzYzLjM3IDE3MC45OSAzNjMuMzcgMzIwLjYxIDMyMC42MiAzMjAuNjEgMzIwLjYyIDI5OS4yNCAzNDEuOTkgMjk5LjI0IDM0MS45OSAxNzAuOTkgMzYzLjM3IDE3MC45OSIvPgogIDxwb2x5Z29uIHBvaW50cz0iMjc3Ljg3IDIxMy43NCAyNzcuODcgMjM1LjEyIDIzNS4xMiAyMzUuMTIgMjM1LjEyIDM2My4zNiAxNzEgMzYzLjM2IDE3MSAzNDEuOTkgMjEzLjc0IDM0MS45OSAyMTMuNzQgMjEzLjc0IDI3Ny44NyAyMTMuNzQiLz4KICA8cGF0aCBkPSJNMTI4LjI1LDE3MC45OXY2NC4xM2g0Mi43NXYyMS4zN2gtNjQuMTN2LTg1LjVINDIuNzV2MTQ5LjYyaDEwNi44N3YtMjEuMzdoLTg1LjV2LTEwNi44N2gyMS4zOHY4NS40OWg4NS41djQyLjc1aDIxLjM3di0xNDkuNjJoLTY0LjEyWk0xNzEsMjEzLjc0aC0yMS4zOHYtMjEuMzdoMjEuMzh2MjEuMzdaIi8+CiAgPHBvbHlnb24gcG9pbnRzPSIzMjAuNjIgMTcwLjk5IDMyMC42MiAyNzcuODYgMjc3Ljg3IDI3Ny44NiAyNzcuODcgMjk5LjI0IDI5OS4yNCAyOTkuMjQgMjk5LjI0IDMyMC42MSAyNTYuNDkgMzIwLjYxIDI1Ni40OSAyNTYuNDkgMjk5LjI0IDI1Ni40OSAyOTkuMjQgMTkyLjM3IDIzNS4xMiAxOTIuMzcgMjM1LjEyIDE3MC45OSAzMjAuNjIgMTcwLjk5Ii8+CiAgPHBvbHlnb24gcG9pbnRzPSIzNjMuMzcgMzQxLjk5IDM2My4zNyA0MDYuMTEgNDIuNzUgNDA2LjExIDQyLjc1IDM0MS45OSAxNDkuNjIgMzQxLjk5IDE0OS42MiAzNjMuMzYgNjQuMTIgMzYzLjM2IDY0LjEyIDM4NC43NCAzNDEuOTkgMzg0Ljc0IDM0MS45OSAzNjMuMzYgMjU2LjQ5IDM2My4zNiAyNTYuNDkgMzQxLjk5IDM2My4zNyAzNDEuOTkiLz4KPC9zdmc+Cg==">
+<style>
+:root{--bg:#DDD7C9;--panel:#DDD7C9;--line:#C7BFA9;--gold:#3A668B;--text:#22303B;--muted:#84795F;--blue:#3A668B;--btnbg:#FFFFFF;--btnhover:#E7EFF4}
+*{box-sizing:border-box} body{margin:0;height:100vh;overflow:hidden;display:flex;background:var(--bg);font-family:Segoe UI,system-ui,sans-serif;color:var(--text)}
+#side{width:248px;flex:0 0 248px;background:var(--panel);border-right:1px solid var(--line);overflow:auto;padding:14px;display:flex;flex-direction:column;gap:13px}
+.logoWrap{display:flex;justify-content:center;padding:2px 0 4px}.logoFull{width:100%;max-width:206px;height:auto}.st{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-bottom:6px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:6px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}.row{display:flex;gap:6px;align-items:center}.btn,button,select{border:1px solid var(--line);background:var(--btnbg);color:var(--text);border-radius:7px;font-size:11px;padding:8px;cursor:pointer}.btn:hover,button:hover{background:var(--btnhover)}.on{background:var(--gold)!important;color:#FFFFFF!important;border-color:var(--gold)!important;font-weight:700}.danger{border-color:#B3261E;color:#B3261E}.primary{background:var(--gold);color:#FFFFFF;border-color:var(--gold);font-weight:800}select{width:100%}input[type=color]{width:38px;height:32px;border:1px solid var(--line);border-radius:7px;background:transparent}input[type=range]{width:100%;accent-color:var(--gold)}.value{font-family:monospace;font-size:10px;color:var(--muted);min-width:42px;text-align:right}.swatches{display:grid;grid-template-columns:repeat(6,1fr);gap:5px}.sw{aspect-ratio:1;border-radius:5px;border:2px solid transparent;cursor:pointer}.sw.sel{border-color:var(--gold);box-shadow:0 0 0 1px #fff inset}.help{font-size:10px;line-height:1.45;color:var(--muted)}
+#wrap{position:relative;flex:1;background:#ffffff;overflow:hidden}#stage{position:absolute;inset:0;width:100%;height:100%;touch-action:none;shape-rendering:geometricPrecision}.hud{position:absolute;background:#FFFFFFE6;color:var(--gold);border:1px solid var(--line);border-radius:999px;padding:5px 10px;font-size:11px;pointer-events:none;box-shadow:0 1px 4px rgba(0,0,0,.10)}.topR{top:12px;right:12px}.topL{top:12px;left:12px}.hint{bottom:12px;left:50%;transform:translateX(-50%);color:var(--muted);transition:opacity .5s}.toast{top:48px;left:50%;transform:translateX(-50%);opacity:0;transition:.2s;color:#2F7D4F}.toast.show{opacity:1}.symLineHalo{stroke:#FFFFFF;stroke-width:3.6;vector-effect:non-scaling-stroke;opacity:.9}.symLine{stroke:#E6399B;stroke-width:1.6;stroke-dasharray:7 5;vector-effect:non-scaling-stroke;opacity:1}#sym,#grid{pointer-events:none}.gridLine{fill:none;stroke:var(--fol-stroke,#3A3A3A);stroke-width:1.4;vector-effect:non-scaling-stroke;opacity:.9}.cell{stroke:none}.selection{fill:none;stroke:var(--gold);stroke-width:2;vector-effect:non-scaling-stroke;pointer-events:none}#bgRect{pointer-events:none}.layerText{font-size:10px;fill:var(--muted)}.small{font-size:9px;color:var(--muted)}
+
+/* Guides and artboard */
+.guideLine{stroke:#00A3FF;stroke-width:1.2;stroke-dasharray:5 5;vector-effect:non-scaling-stroke;opacity:.9;pointer-events:none}
+.constructLine{stroke-width:1;vector-effect:non-scaling-stroke;opacity:.9}
+.folCircle{fill:none;stroke:var(--fol-stroke,#111111);stroke-width:1.4;vector-effect:non-scaling-stroke;opacity:.95}
+#guides{pointer-events:none}.artShade{fill:rgba(0,0,0,.10);pointer-events:none}.artRect{fill:none;stroke:var(--gold);stroke-width:2;stroke-dasharray:10 5;vector-effect:non-scaling-stroke;pointer-events:none}.artLabel{fill:var(--text);font-size:11px;font-weight:700;pointer-events:none}
+.num{width:100%;border:1px solid var(--line);border-radius:7px;background:var(--btnbg);color:var(--text);padding:7px;font-size:11px}
+
+</style>
+</head>
+<body>
+<aside id="side">
+  <div class="logoWrap">
+    <svg class="logoFull" viewBox="0 0 1020.43 272.07" xmlns="http://www.w3.org/2000/svg" aria-label="Zakhrafah">
+      <defs>
+        <style>
+          .cls-1 { fill: #2d2d2d; }
+          .cls-2 { fill: none; }
+        </style>
+      </defs>
+      <g>
+        <rect x="800.24" y="77.71" width="12.95" height="12.95"/>
+        <rect x="826.14" y="77.71" width="12.95" height="12.95"/>
+        <rect x="877.95" y="77.71" width="12.95" height="12.95"/>
+        <rect x="955.66" y="77.71" width="12.95" height="12.95"/>
+        <rect x="981.57" y="77.71" width="12.95" height="12.95"/>
+        <path d="M774.34,0v271.99h246.09V0h-246.09ZM1007.48,259.04h-220.19V12.95h220.19v246.09Z"/>
+        <path d="M800.24,25.91v38.85h194.28V25.91h-194.28ZM981.57,51.8h-168.38v-12.95h168.38v12.95Z"/>
+        <path d="M852.05,103.61v38.85h25.91v12.96h-38.85v-51.81h-38.85v90.66h64.76v-12.95h-51.81v-64.76h12.95v51.8h51.81v25.91h12.96v-90.66h-38.86ZM877.95,129.52h-12.95v-12.95h12.95v12.95Z"/>
+        <polygon points="994.52 103.61 994.52 194.28 968.62 194.28 968.62 181.33 981.57 181.33 981.57 103.61 994.52 103.61"/>
+        <polygon points="968.62 103.61 968.62 168.37 942.71 168.37 942.71 181.33 955.67 181.33 955.67 194.28 929.76 194.28 929.76 155.42 955.67 155.42 955.67 116.57 916.81 116.57 916.81 103.61 968.62 103.61"/>
+        <polygon points="942.71 129.52 942.71 142.47 916.81 142.47 916.81 220.18 877.95 220.18 877.95 207.23 903.86 207.23 903.86 129.52 942.71 129.52"/>
+        <polygon points="994.52 207.23 994.52 246.09 800.24 246.09 800.24 207.23 865 207.23 865 220.18 813.19 220.18 813.19 233.14 981.57 233.14 981.57 220.18 929.76 220.18 929.76 207.23 994.52 207.23"/>
+      </g>
+      <g>
+        <path class="cls-1" d="M0,271.65v-9.56l36.04-53.47v-2.21H0v-7.46h45.43v9.56l-36.14,53.47v2.1h36.14v7.56H0Z"/>
+        <path class="cls-1" d="M68.05,271.65c-4.64,0-8.18-1.37-10.6-4.1-2.42-2.73-3.63-6.72-3.63-11.98,0-3.43.57-6.23,1.72-8.4,1.14-2.17,2.88-3.83,5.2-4.99,2.32-1.16,5.2-1.87,8.63-2.15l15.55-1.58v-4.52c0-3.57-.76-6.09-2.27-7.56-1.51-1.47-3.75-2.21-6.71-2.21-1.68,0-3.68.07-6.01.21-2.32.14-4.63.32-6.91.53-2.29.21-4.31.42-6.06.63l-.4-6.2c1.62-.35,3.57-.7,5.86-1.05,2.29-.35,4.68-.65,7.17-.89,2.49-.24,4.78-.37,6.86-.37,3.84,0,6.97.61,9.39,1.84,2.42,1.23,4.19,3.08,5.3,5.57,1.11,2.49,1.67,5.66,1.67,9.51v26.58c.13,1.54.72,2.66,1.77,3.36,1.04.7,2.37,1.16,3.99,1.37l-.3,6.41c-.94,0-1.85-.04-2.73-.11-.88-.07-1.7-.19-2.47-.37-.77-.18-1.53-.37-2.27-.58-.88-.35-1.7-.77-2.47-1.26-.77-.49-1.53-1.09-2.27-1.79-1.28.56-2.91,1.16-4.9,1.79-1.99.63-4.11,1.17-6.36,1.63-2.26.45-4.49.68-6.71.68ZM69.36,265.13c1.82,0,3.7-.17,5.65-.53,1.95-.35,3.8-.77,5.55-1.26,1.75-.49,3.2-.95,4.34-1.37v-17.12l-14.64,1.47c-3.03.28-5.2,1.19-6.51,2.73-1.31,1.54-1.97,3.75-1.97,6.62s.64,5.25,1.92,6.93c1.28,1.68,3.16,2.52,5.65,2.52Z"/>
+        <path class="cls-1" d="M107.72,271.54v-75.32h7.77v44.33l7.77-.32,14.13-21.22h8.98l-16.25,24.27,17.06,28.26h-8.98l-14.74-24.16-7.97.42v23.74h-7.77Z"/>
+        <path class="cls-1" d="M156.28,271.54v-75.32h7.77v25.63c1.21-.56,2.68-1.14,4.39-1.73,1.72-.59,3.55-1.1,5.5-1.52,1.95-.42,3.8-.63,5.55-.63,3.5,0,6.36.47,8.58,1.42,2.22.95,3.95,2.45,5.2,4.52,1.24,2.07,2.1,4.73,2.57,7.98.47,3.26.71,7.2.71,11.82v27.84h-7.87v-27.52c0-4.55-.25-8.2-.76-10.93s-1.5-4.71-2.98-5.93c-1.48-1.23-3.77-1.84-6.86-1.84-1.68,0-3.42.16-5.2.47-1.78.32-3.45.72-5,1.21-1.55.49-2.83.95-3.84,1.37v43.18h-7.77Z"/>
+        <path class="cls-1" d="M210.59,271.54v-52.53h7.77v7.04c1.28-.91,2.89-1.91,4.85-2.99,1.95-1.09,4.1-2.12,6.46-3.1,2.36-.98,4.71-1.68,7.07-2.1v8.3c-2.29.49-4.61,1.14-6.97,1.94-2.36.81-4.53,1.66-6.51,2.57-1.99.91-3.62,1.72-4.9,2.42v38.45h-7.77Z"/>
+        <path class="cls-1" d="M256.62,271.96c-4.64,0-8.18-1.37-10.6-4.1-2.42-2.73-3.63-6.72-3.63-11.98,0-3.43.57-6.23,1.72-8.4,1.14-2.17,2.88-3.83,5.2-4.99,2.32-1.16,5.2-1.87,8.63-2.15l15.55-1.58v-4.52c0-3.57-.76-6.09-2.27-7.56-1.51-1.47-3.75-2.21-6.71-2.21-1.68,0-3.68.07-6.01.21-2.32.14-4.63.32-6.92.53-2.29.21-4.31.42-6.06.63l-.4-6.2c1.62-.35,3.57-.7,5.85-1.05,2.29-.35,4.68-.65,7.17-.89,2.49-.24,4.78-.37,6.86-.37,3.84,0,6.97.61,9.39,1.84,2.42,1.23,4.19,3.08,5.3,5.57,1.11,2.49,1.67,5.66,1.67,9.51v26.58c.13,1.54.72,2.66,1.77,3.36,1.04.7,2.37,1.16,3.99,1.37l-.3,6.41c-.94,0-1.85-.04-2.73-.11-.87-.07-1.7-.19-2.47-.37-.77-.18-1.53-.37-2.27-.58-.87-.35-1.7-.77-2.47-1.26-.77-.49-1.53-1.09-2.27-1.79-1.28.56-2.91,1.16-4.9,1.79-1.99.63-4.11,1.17-6.36,1.63-2.26.45-4.49.68-6.71.68ZM257.93,265.13c1.82,0,3.7-.17,5.65-.53,1.95-.35,3.8-.77,5.55-1.26,1.75-.49,3.2-.95,4.34-1.37v-17.12l-14.64,1.47c-3.03.28-5.2,1.19-6.51,2.73-1.31,1.54-1.97,3.75-1.97,6.62s.64,5.25,1.92,6.93c1.28,1.68,3.16,2.52,5.65,2.52Z"/>
+        <path class="cls-1" d="M297.91,270.91v-45.49h-6.36v-7.04h6.36v-4.62c0-5.04.44-8.96,1.31-11.77.87-2.8,2.32-4.74,4.34-5.83,2.02-1.09,4.68-1.63,7.97-1.63.81,0,1.92.04,3.33.11,1.41.07,2.79.16,4.14.26,1.35.11,2.29.23,2.83.37l-.1,6.83c-1.21-.07-2.67-.12-4.39-.16-1.72-.03-3.11-.05-4.19-.05-1.88,0-3.37.33-4.44,1-1.08.67-1.83,1.87-2.27,3.62-.44,1.75-.66,4.2-.66,7.35v4.52h14.54v7.04h-14.54v45.49h-7.87Z"/>
+        <path class="cls-1" d="M340.31,271.96c-4.64,0-8.18-1.37-10.6-4.1-2.42-2.73-3.63-6.72-3.63-11.98,0-3.43.57-6.23,1.72-8.4,1.14-2.17,2.88-3.83,5.2-4.99,2.32-1.16,5.2-1.87,8.63-2.15l15.55-1.58v-4.52c0-3.57-.76-6.09-2.27-7.56-1.51-1.47-3.75-2.21-6.71-2.21-1.68,0-3.68.07-6.01.21-2.32.14-4.63.32-6.91.53-2.29.21-4.31.42-6.06.63l-.4-6.2c1.62-.35,3.57-.7,5.86-1.05,2.29-.35,4.68-.65,7.17-.89,2.49-.24,4.78-.37,6.86-.37,3.84,0,6.97.61,9.39,1.84,2.42,1.23,4.19,3.08,5.3,5.57,1.11,2.49,1.67,5.66,1.67,9.51v26.58c.13,1.54.72,2.66,1.77,3.36,1.04.7,2.37,1.16,3.99,1.37l-.3,6.41c-.94,0-1.85-.04-2.73-.11-.88-.07-1.7-.19-2.47-.37-.77-.18-1.53-.37-2.27-.58-.88-.35-1.7-.77-2.47-1.26-.77-.49-1.53-1.09-2.27-1.79-1.28.56-2.91,1.16-4.9,1.79-1.99.63-4.11,1.17-6.36,1.63-2.26.45-4.49.68-6.71.68ZM341.62,265.13c1.82,0,3.7-.17,5.65-.53,1.95-.35,3.8-.77,5.55-1.26,1.75-.49,3.2-.95,4.34-1.37v-17.12l-14.64,1.47c-3.03.28-5.2,1.19-6.51,2.73-1.31,1.54-1.97,3.75-1.97,6.62s.64,5.25,1.92,6.93c1.28,1.68,3.16,2.52,5.65,2.52Z"/>
+        <path class="cls-1" d="M379.98,270.91v-75.32h7.77v25.63c1.21-.56,2.67-1.14,4.39-1.73,1.72-.59,3.55-1.1,5.5-1.52,1.95-.42,3.8-.63,5.55-.63,3.5,0,6.36.47,8.58,1.42,2.22.95,3.95,2.45,5.2,4.52,1.24,2.07,2.1,4.73,2.57,7.98.47,3.26.71,7.2.71,11.82v27.84h-7.87v-27.52c0-4.55-.25-8.2-.76-10.93-.51-2.73-1.5-4.71-2.98-5.93-1.48-1.23-3.77-1.84-6.86-1.84-1.68,0-3.42.16-5.2.47-1.78.32-3.45.72-5,1.21-1.55.49-2.83.95-3.84,1.37v43.18h-7.77Z"/>
+        <path class="cls-1" d="M472.24,271.96c-1.55,0-3.42-.11-5.6-.32-2.19-.21-4.36-.47-6.51-.79-2.15-.32-4.07-.61-5.75-.89l.4-7.04c1.68.21,3.58.46,5.7.74,2.12.28,4.19.51,6.21.68,2.02.18,3.63.26,4.85.26,2.76,0,5.05-.26,6.86-.79,1.82-.53,3.2-1.42,4.14-2.68.94-1.26,1.41-3.05,1.41-5.36,0-1.75-.35-3.12-1.06-4.1-.71-.98-2.02-1.79-3.94-2.42s-4.69-1.23-8.33-1.79c-3.77-.63-6.91-1.42-9.44-2.36-2.52-.95-4.39-2.36-5.6-4.25-1.21-1.89-1.82-4.59-1.82-8.09,0-3.92.87-7,2.62-9.24,1.75-2.24,4.02-3.83,6.81-4.78,2.79-.95,5.7-1.42,8.73-1.42,1.88,0,3.95.11,6.21.32,2.25.21,4.46.47,6.61.79,2.15.32,4,.61,5.55.89l-.2,7.04c-1.62-.28-3.5-.54-5.65-.79-2.15-.24-4.31-.45-6.46-.63-2.15-.17-4.04-.26-5.65-.26-2.02,0-3.84.23-5.45.68-1.62.46-2.89,1.24-3.84,2.36-.94,1.12-1.41,2.7-1.41,4.73,0,1.54.34,2.78,1.01,3.73.67.95,1.95,1.73,3.84,2.36,1.88.63,4.61,1.26,8.18,1.89,4.17.7,7.52,1.58,10.04,2.63,2.52,1.05,4.36,2.52,5.5,4.41,1.14,1.89,1.72,4.55,1.72,7.98,0,4.06-.79,7.3-2.37,9.72-1.58,2.42-3.84,4.15-6.76,5.2-2.93,1.05-6.44,1.58-10.55,1.58Z"/>
+        <path class="cls-1" d="M520.09,272.07c-3.5,0-6.28-.56-8.33-1.68-2.05-1.12-3.52-3.06-4.39-5.83-.88-2.77-1.31-6.67-1.31-11.71v-27.42h-7.17v-7.04h7.17v-16.07h7.77v16.07h15.85v7.04h-15.85v25c0,3.71.15,6.6.45,8.67.3,2.07.96,3.52,1.97,4.36,1.01.84,2.59,1.26,4.74,1.26.67,0,1.55-.04,2.62-.11,1.08-.07,2.17-.16,3.28-.26,1.11-.11,2.1-.19,2.98-.26l.5,6.83c-.94.14-2.05.3-3.33.47-1.28.17-2.54.33-3.79.47-1.25.14-2.31.21-3.18.21Z"/>
+        <path class="cls-1" d="M554.32,271.96c-4.31,0-7.61-.91-9.89-2.73-2.29-1.82-3.85-4.66-4.69-8.51-.84-3.85-1.26-8.82-1.26-14.92v-27.42h7.77v27.42c0,4.62.22,8.3.66,11.03.44,2.73,1.4,4.71,2.88,5.93,1.48,1.23,3.7,1.84,6.66,1.84s5.65-.42,8.08-1.26c2.42-.84,4.37-1.68,5.85-2.52v-42.44h7.77v52.53h-7.77v-3.68c-2.15,1.26-4.49,2.36-7.01,3.31-2.52.95-5.54,1.42-9.03,1.42Z"/>
+        <path class="cls-1" d="M608.63,271.96c-2.02,0-3.94-.23-5.75-.68-1.82-.46-3.48-1.24-5-2.36-1.51-1.12-2.84-2.68-3.99-4.67-1.14-2-2.02-4.57-2.62-7.72-.61-3.15-.91-6.97-.91-11.45,0-6.23.71-11.4,2.12-15.49,1.41-4.1,3.67-7.16,6.76-9.19s7.2-3.05,12.32-3.05c1.28,0,2.69.07,4.24.21,1.55.14,3.04.32,4.49.53,1.45.21,2.61.42,3.48.63v-23.11h7.87v75.32h-7.77v-3.47c-1.08.63-2.47,1.3-4.19,2-1.72.7-3.53,1.3-5.45,1.79-1.92.49-3.79.74-5.6.74ZM609.64,264.61c1.75,0,3.52-.21,5.3-.63,1.78-.42,3.45-.93,5-1.52,1.55-.59,2.83-1.14,3.84-1.63v-35.19c-.81-.14-1.92-.3-3.33-.47-1.41-.17-2.88-.33-4.39-.47-1.51-.14-2.88-.21-4.09-.21-3.43,0-6.12.77-8.08,2.31-1.95,1.54-3.35,3.83-4.19,6.88-.84,3.05-1.26,6.85-1.26,11.4,0,4.2.3,7.58.91,10.14.61,2.56,1.43,4.52,2.47,5.88,1.04,1.37,2.24,2.29,3.58,2.78,1.35.49,2.76.74,4.24.74Z"/>
+        <path class="cls-1" d="M646.18,206.83v-9.46h7.77v9.46h-7.77ZM646.18,270.91v-52.53h7.77v52.53h-7.77Z"/>
+        <path class="cls-1" d="M687.87,271.96c-5.65,0-10.04-1.02-13.17-3.05-3.13-2.03-5.32-5.11-6.56-9.24-1.25-4.13-1.87-9.35-1.87-15.65s.69-11,2.07-14.92c1.38-3.92,3.65-6.86,6.81-8.82,3.16-1.96,7.4-2.94,12.72-2.94s9.66.98,12.82,2.94c3.16,1.96,5.43,4.9,6.81,8.82,1.38,3.92,2.07,8.9,2.07,14.92s-.62,11.52-1.87,15.65c-1.25,4.13-3.43,7.21-6.56,9.24-3.13,2.03-7.55,3.05-13.27,3.05ZM687.87,264.92c3.9,0,6.83-.72,8.78-2.15,1.95-1.43,3.25-3.69,3.89-6.78.64-3.08.96-7.07.96-11.98s-.4-8.68-1.21-11.56c-.81-2.87-2.19-4.94-4.14-6.2-1.95-1.26-4.71-1.89-8.28-1.89s-6.24.63-8.23,1.89c-1.99,1.26-3.38,3.33-4.19,6.2-.81,2.87-1.21,6.72-1.21,11.56s.32,8.9.96,11.98c.64,3.08,1.93,5.34,3.89,6.78,1.95,1.44,4.88,2.15,8.78,2.15Z"/>
+      </g>
+      <g>
+        <path class="cls-2" d="M400.06,119.43c-1.98.91-3.35,2.6-4.11,5.07-.76,2.48-1.14,6.11-1.14,10.87s.38,8.4,1.14,10.88c.76,2.48,2.12,4.17,4.11,5.07,1.98.9,4.8,1.35,8.45,1.35h12.18v-34.61h-12.18c-3.65,0-6.46.45-8.45,1.35Z"/>
+        <path class="cls-2" d="M12.6,119.43c-1.98.91-3.35,2.6-4.11,5.07-.76,2.48-1.14,6.11-1.14,10.87s.38,8.4,1.14,10.88c.76,2.48,2.12,4.17,4.11,5.07,1.98.9,4.8,1.35,8.45,1.35h12.18v-34.61h-12.18c-3.65,0-6.47.45-8.45,1.35Z"/>
+        <path class="cls-2" d="M120.13,119.43c-1.98.91-3.35,2.6-4.11,5.07-.76,2.48-1.14,6.11-1.14,10.87s.38,8.4,1.14,10.88c.76,2.48,2.12,4.17,4.11,5.07,1.98.9,4.8,1.35,8.45,1.35h12.18v-34.61h-12.18c-3.65,0-6.46.45-8.45,1.35Z"/>
+        <path class="cls-2" d="M525.43,119.43c-1.98.91-3.35,2.6-4.1,5.07-.76,2.48-1.14,6.11-1.14,10.87s.38,8.4,1.14,10.88c.75,2.48,2.12,4.17,4.1,5.07,1.99.9,4.8,1.35,8.45,1.35h12.18v-34.61h-12.18c-3.65,0-6.46.45-8.45,1.35Z"/>
+        <rect class="cls-1" x="24.83" y="95.03" width="7.36" height="8.7"/>
+        <rect class="cls-1" x="11.89" y="95.03" width="7.37" height="8.7"/>
+        <rect class="cls-1" x="126.32" y="95.03" width="7.36" height="8.7"/>
+        <path class="cls-1" d="M115.79,113.78c-3.05,1.71-5.19,4.35-6.42,7.93-1.23,3.57-1.84,8.14-1.84,13.67s.61,9.94,1.84,13.2c.6,1.59,1.42,2.96,2.46,4.11H40.59v-41.47h-19.54c-5.47,0-9.74.86-12.79,2.56-3.05,1.71-5.19,4.35-6.42,7.93-1.23,3.57-1.84,8.14-1.84,13.67s.61,10.11,1.84,13.68c1.23,3.58,3.37,6.23,6.42,7.93,3.05,1.71,7.32,2.56,12.79,2.56h127.07v-48.34h-19.54c-5.47,0-9.74.86-12.79,2.56ZM33.23,152.69h-12.18c-3.65,0-6.47-.45-8.45-1.35-1.98-.91-3.35-2.59-4.11-5.07-.76-2.48-1.14-6.11-1.14-10.88s.38-8.39,1.14-10.87c.76-2.48,2.12-4.17,4.11-5.07,1.98-.9,4.8-1.35,8.45-1.35h12.18v34.61ZM140.76,152.69h-12.18c-3.65,0-6.46-.45-8.45-1.35-1.98-.91-3.35-2.59-4.11-5.07-.76-2.48-1.14-6.11-1.14-10.88s.38-8.39,1.14-10.87c.76-2.48,2.12-4.17,4.11-5.07,1.98-.9,4.8-1.35,8.45-1.35h12.18v34.61Z"/>
+        <rect class="cls-1" x="203.64" y="94.63" width="7.37" height="8.7"/>
+        <path class="cls-1" d="M219.64,113.49c-3.43-1.51-7.54-2.27-12.32-2.27-2.9,0-5.89.24-8.97.72-3.08.49-5.91,1.05-8.5,1.69l.85,6.19c3.4-.51,6.64-.92,9.72-1.21,3.09-.29,5.44-.44,7.09-.44,5.22,0,9.11,1.05,11.66,3.14,2.55,2.09,3.82,5.24,3.82,9.42v21.94h-49.56v-41.47h-7.37v49.89c0,4.06-.91,7.24-2.74,9.52-1.83,2.28-4.22,3.43-7.17,3.43-.57,0-1.23-.05-1.98-.14-.76-.1-1.57-.18-2.45-.24l-.85,6.86c.88.06,1.78.14,2.69.24.91.09,1.78.14,2.59.14,3.4,0,6.38-.82,8.97-2.46,2.58-1.64,4.61-3.97,6.09-6.96,1.48-3,2.22-6.46,2.22-10.39v-1.54h56.93v-28.81c0-4.19-.93-7.74-2.78-10.64-1.86-2.89-4.5-5.11-7.93-6.62Z"/>
+        <rect class="cls-1" x="246.78" y="95.03" width="7.37" height="8.7"/>
+        <path class="cls-1" d="M322.97,152.69h-68.82v-41.47h-7.37v49.89c0,4.06-.91,7.24-2.73,9.52-1.82,2.28-4.22,3.43-7.18,3.43-.57,0-1.23-.05-1.98-.14-.75-.1-1.57-.18-2.45-.24l-.85,6.86c.88.06,1.78.14,2.69.24.91.09,1.78.14,2.59.14,3.4,0,6.39-.82,8.97-2.46,2.58-1.64,4.61-3.97,6.09-6.96,1.48-3,2.22-6.46,2.22-10.39v-1.54h76.19v-68.46h-7.37v61.6Z"/>
+        <polygon class="cls-1" points="346.59 91.09 346.59 91.4 346.59 159.55 353.83 159.55 353.83 91.4 353.83 91.09 346.59 91.09"/>
+        <path class="cls-1" d="M455.81,111.21h-7.37v41.47h-20.39v-41.47h-19.54c-5.47,0-9.74.86-12.79,2.56-3.05,1.71-5.19,4.35-6.42,7.93-1.23,3.57-1.84,8.14-1.84,13.67s.61,10.11,1.84,13.68c1.23,3.58,3.37,6.23,6.42,7.93,3.05,1.71,7.32,2.56,12.79,2.56h12.18v2.61c0,3.87-1.2,6.82-3.59,8.84-2.39,2.03-6.2,3.05-11.43,3.05-1.57,0-3.48-.1-5.71-.29-2.23-.19-5.02-.51-8.36-.96l-1.13,6.09c2.95.64,5.68,1.14,8.17,1.5,2.48.35,4.83.53,7.03.53,4.66,0,8.65-.73,11.99-2.18,3.33-1.45,5.9-3.59,7.69-6.43,1.79-2.84,2.69-6.25,2.69-10.24v-2.51h27.76v-48.34ZM420.69,152.69h-12.18c-3.65,0-6.46-.45-8.45-1.35-1.98-.91-3.35-2.59-4.11-5.07-.76-2.48-1.14-6.11-1.14-10.88s.38-8.39,1.14-10.87c.76-2.48,2.12-4.17,4.11-5.07,1.98-.9,4.8-1.35,8.45-1.35h12.18v34.61Z"/>
+        <rect class="cls-1" x="442.02" y="168.26" width="7.37" height="8.7"/>
+        <rect class="cls-1" x="454.96" y="168.26" width="7.36" height="8.7"/>
+        <path class="cls-1" d="M492.72,113.63c-3.59-1.61-7.9-2.42-12.93-2.42h-7.65v6.87h7.65c4.09,0,7.35.59,9.77,1.79,2.42,1.19,4.17,3.17,5.24,5.94,1.07,2.77,1.61,6.54,1.61,11.31v15.56h-29.17v6.87h36.54v-22.43c0-6.51-.95-11.65-2.83-15.42-1.89-3.78-4.63-6.46-8.22-8.07Z"/>
+        <rect class="cls-1" x="627.53" y="95.03" width="7.37" height="8.7"/>
+        <rect class="cls-1" x="614.6" y="95.03" width="7.37" height="8.7"/>
+        <path class="cls-1" d="M709.1,126.64c-.32-2.48-.7-5.11-1.14-7.88s-.88-5.29-1.32-7.54l-7.18,1.26c.57,2.71,1.06,5.39,1.46,8.07.41,2.67.72,5.07.95,7.2.22,2.13.33,3.77.33,4.93v20.01h-13.97c-1.2,0-2.36-.27-3.5-.82-.73-.36-1.53-.85-2.39-1.49.84-2.85,1.26-6.52,1.26-11.03v-23.3h-7.37v23.3c0,3.74-.22,6.57-.66,8.51-.44,1.93-1.21,3.22-2.31,3.87-1.1.64-2.72.96-4.86.96h-10.67v-31.81h-7.27v31.81h-22.09v-41.47h-7.37v41.47h-67.6v-41.47h-19.54c-5.47,0-9.74.86-12.79,2.56-3.05,1.71-5.19,4.35-6.42,7.93-1.23,3.57-1.84,8.14-1.84,13.67s.61,10.11,1.84,13.68c1.23,3.58,3.37,6.23,6.42,7.93,3.05,1.71,7.32,2.56,12.79,2.56h12.18v2.61c0,3.87-1.2,6.82-3.58,8.84-2.39,2.03-6.2,3.05-11.43,3.05-1.57,0-3.48-.1-5.71-.29-2.23-.19-5.02-.51-8.36-.96l-1.13,6.09c2.95.64,5.68,1.14,8.17,1.5,2.48.35,4.83.53,7.03.53,4.66,0,8.65-.73,11.99-2.18,3.34-1.45,5.9-3.59,7.7-6.43,1.79-2.84,2.69-6.25,2.69-10.24v-2.51h114.99c3.65,0,6.57-.63,8.78-1.89.56-.32,1.09-.69,1.57-1.12,1.04.73,2.11,1.31,3.2,1.75,2.04.84,4.14,1.26,6.28,1.26h21.33v-26.88c0-1.54-.16-3.56-.47-6.04ZM546.06,152.69h-12.18c-3.65,0-6.46-.45-8.45-1.35-1.98-.91-3.35-2.59-4.1-5.07-.76-2.48-1.14-6.11-1.14-10.88s.38-8.39,1.14-10.87c.75-2.48,2.12-4.17,4.1-5.07,1.99-.9,4.8-1.35,8.45-1.35h12.18v34.61Z"/>
+      </g>
+    </svg>
+  </div>
+
+  <section><div class="st">Tool</div><div class="grid2">
+    <button id="paint" class="on">✦ Paint</button><button id="erase">◯ Erase</button>
+    <button id="pan">✥ Pan</button><button id="pick">⬡ Pick</button>
+  </div></section>
+
+  <section><div class="st">Grid</div>
+    <select id="gridType"><option value="fol">Flower of Life</option><option value="square">Square</option><option value="hex">Hexagon</option><option value="triangle">Triangle</option><option value="diamond">Diamond</option><option value="brick">Brick</option><option value="isometric">Isometric</option></select>
+    <div class="row" style="margin-top:8px"><span class="small">Size</span><input id="size" type="range" min="22" max="120" value="56"><span id="sizev" class="value">56</span></div>
+    <div class="grid2" style="margin-top:8px"><button id="lines" class="on">Lines on</button><button id="lock">🔓 Grid free</button></div>
+    <div class="grid2" style="margin-top:6px"><button id="construct" class="on">FOL guide lines</button><button id="snapGrid" class="on">Snap grid</button></div>
+    <div class="help" style="margin-top:6px">Lock prevents accidental panning/zooming and keeps the grid origin fixed. Changing grid keeps your painted cells. Flower of Life now uses the full repeated construction grid.</div>
+  </section>
+
+  <section><div class="st">Symmetry</div><div class="grid3">
+    <button data-sym="none" class="sym on">None</button><button data-sym="h" class="sym">Mirror H</button><button data-sym="v" class="sym">Mirror V</button>
+    <button data-sym="hv" class="sym">Both</button><button data-sym="3" class="sym">3-fold</button><button data-sym="6" class="sym">6-fold</button>
+  </div><div class="row" style="margin-top:8px"><button id="symGuide" class="on" style="width:100%">Symmetry guide visible</button></div></section>
+
+  <section><div class="st">Colour</div><div class="row"><input id="color" type="color" value="#555555"><span id="hex" class="value" style="min-width:72px">#555555</span></div>
+    <div class="row" style="margin-top:8px"><span class="small">Alpha</span><input id="alpha" type="range" min="20" max="100" value="100"><span id="alphav" class="value">100%</span></div>
+    <div id="swatches" class="swatches" style="margin-top:8px"></div>
+    <div id="swatchesTrad" class="swatches" style="margin-top:6px"></div>
+    <button id="resetColors" style="width:100%;margin-top:6px">Reset picked colours</button>
+    <div class="row" style="margin-top:8px"><span class="small">Grid Color</span><input id="constructColor" type="color" value="#111111"><span id="constructHex" class="value" style="min-width:72px">#111111</span></div>
+    <div class="help" style="margin-top:6px">Top row: colours you've picked. Bottom row: traditional palette.</div>
+  </section>
+
+
+  <section><div class="st">Canvas Size</div>
+    <div class="grid2"><button id="canvasToggle" class="on">Canvas on</button><button id="exportArea">Export size off</button></div>
+    <div class="row" style="margin-top:8px"><span class="small" style="width:44px">Width</span><input id="artW" class="num" type="number" min="1" value="300" title="Canvas width"></div>
+    <div class="row" style="margin-top:6px"><span class="small" style="width:44px">Height</span><input id="artH" class="num" type="number" min="1" value="200" title="Canvas height"></div>
+    <button id="applyArt" style="width:100%;margin-top:6px">Apply canvas size</button>
+    <div class="help" style="margin-top:6px">Type width and height, then apply. Symmetry mirrors always fit this canvas.</div>
+  </section>
+
+  <section><div class="st">Guides</div>
+    <button id="guideToggle" class="on" style="width:100%">Guides on</button>
+    <div class="grid2" style="margin-top:6px"><button id="addVGuide">+ Vertical</button><button id="addHGuide">+ Horizontal</button></div>
+    <div class="grid2" style="margin-top:6px"><button id="clearGuides">Clear guides</button><button id="snapGuide">Snap guides</button></div>
+  </section>
+
+  <section><div class="st">Background</div><div class="row"><input id="bg" type="color" value="#ffffff"><button id="transparent" style="flex:1">Transparent export</button></div></section>
+
+  <section><div class="st">History</div><div class="grid2"><button id="undo">↩ Undo</button><button id="redo">↪ Redo</button></div></section>
+
+  <section><div class="st">Export</div><div class="grid2"><button id="png" class="primary">PNG 4K</button><button id="svg" class="primary">SVG</button></div><button id="copySvg" style="width:100%;margin-top:6px">Copy SVG code</button></section>
+
+  <section><button id="clear" class="danger" style="width:100%">Clear design</button></section>
+</aside>
+<main id="wrap">
+<svg id="stage" xmlns="http://www.w3.org/2000/svg">
+  <rect id="bgRect" />
+  <g id="cells"></g>
+  <g id="grid"></g>
+  <g id="artboardLayer"></g>
+  <g id="sym"></g>
+  <g id="guides"></g>
+  <path id="hover" class="selection" d=""/>
+</svg>
+<div id="zoom" class="hud topR">100%</div><div id="mode" class="hud topL">✦ Paint</div><div id="toast" class="hud toast"></div><div id="hint" class="hud hint">Click cells to paint · Wheel zoom · Drag to pan · L locks grid · S toggles symmetry guide</div>
+</main>
+<script>
+const SQ3=Math.sqrt(3), TAU=Math.PI*2;
+const $=id=>document.getElementById(id);
+const state={tool:'paint',grid:'fol',size:56,lines:true,construct:true,constructColor:'#111111',snapGrid:true,guidesVisible:true,snapGuide:false,locked:false,sym:'none',symGuide:true,color:'#555555',alpha:1,bg:'#ffffff',transparent:false,exportArt:false,art:{active:true,x:-150,y:-100,w:300,h:200},guides:[],view:{x:-320,y:-180,w:640,h:360},fills:new Map(),hist:[],hi:-1};
+const traditionalColors=['#B5121B','#FFFFFF','#F7E7CE','#D8B56D','#8A5A2B','#2E6F73','#0B3D3E','#C9A227','#7A1F2B','#E8DCC2','#4B6F44','#1F1F1F'];
+let customColors=JSON.parse(localStorage.getItem('zakhrafahColorHistory')||'[]');
+function renderSwatchRow(boxId,list){
+  const box=$(boxId); box.innerHTML='';
+  list.slice(0,24).forEach(c=>{
+    let d=document.createElement('div');
+    d.className='sw'+(c.toLowerCase()===state.color.toLowerCase()?' sel':'');
+    d.title=c; d.style.background=c;
+    d.onclick=()=>setColor(c,false);
+    box.appendChild(d);
+  });
+}
+function renderSwatches(){
+  renderSwatchRow('swatches',customColors);
+  renderSwatchRow('swatchesTrad',traditionalColors);
+}
+function rememberColor(c){
+  c=c.toUpperCase();
+  if(!/^#[0-9A-F]{6}$/.test(c)) return;
+  customColors=[c,...customColors.filter(x=>x.toUpperCase()!==c)].slice(0,12);
+  localStorage.setItem('zakhrafahColorHistory',JSON.stringify(customColors));
+}
+function setColor(c,remember=false){
+  c=c.toUpperCase();
+  state.color=c;$('color').value=c;$('hex').textContent=c;
+  if(remember) rememberColor(c);
+  renderSwatches();
+}
+renderSwatches();
+$('resetColors').onclick=()=>{customColors=[];localStorage.removeItem('zakhrafahColorHistory');renderSwatches();toast('Picked colours reset')};
+function hexToRgb(h){const r=parseInt(h.slice(1,3),16),g=parseInt(h.slice(3,5),16),b=parseInt(h.slice(5,7),16);return `rgb(${r}, ${g}, ${b})`;}
+function toast(m){const t=$('toast');t.textContent=m;t.classList.add('show');clearTimeout(toast.t);toast.t=setTimeout(()=>t.classList.remove('show'),1800)}
+function setTool(t){state.tool=t;['paint','erase','pan','pick'].forEach(id=>$(id).classList.toggle('on',id===t));$('mode').textContent={paint:'✦ Paint',erase:'◯ Erase',pan:'✥ Pan',pick:'⬡ Pick'}[t];}
+['paint','erase','pan','pick'].forEach(id=>$(id).onclick=()=>setTool(id));
+function snap(){state.hist=state.hist.slice(0,state.hi+1);state.hist.push(JSON.stringify([...state.fills]));if(state.hist.length>80)state.hist.shift();state.hi=state.hist.length-1}
+function restore(i){state.fills=new Map(JSON.parse(state.hist[i]));drawCells();}
+$('undo').onclick=()=>{if(state.hi>0){state.hi--;restore(state.hi);toast('Undo')}};$('redo').onclick=()=>{if(state.hi<state.hist.length-1){state.hi++;restore(state.hi);toast('Redo')}};
+$('gridType').onchange=e=>{state.grid=e.target.value;$('hover').setAttribute('d','');snap();render();toast('Grid changed — existing colours preserved')};
+$('size').oninput=e=>{if(state.locked){e.target.value=state.size;return toast('Grid is locked')}state.size=+e.target.value;$('sizev').textContent=state.size;render()};
+$('lines').onclick=()=>{state.lines=!state.lines;$('lines').classList.toggle('on',state.lines);$('lines').textContent=state.lines?'Lines on':'Lines off';render()};
+$('construct').onclick=()=>{state.construct=!state.construct;$('construct').classList.toggle('on',state.construct);renderGrid()};
+$('constructColor').oninput=e=>{state.constructColor=e.target.value.toUpperCase();$('constructHex').textContent=state.constructColor;renderGrid()};
+$('snapGrid').onclick=()=>{state.snapGrid=!state.snapGrid;$('snapGrid').classList.toggle('on',state.snapGrid)};
+$('canvasToggle').onclick=()=>{state.art.active=!state.art.active;$('canvasToggle').classList.toggle('on',state.art.active);$('canvasToggle').textContent=state.art.active?'Canvas on':'Canvas off';renderArtboard();renderSym();toast(state.art.active?'Canvas visible':'Canvas hidden')};
+$('guideToggle').onclick=()=>{state.guidesVisible=!state.guidesVisible;$('guideToggle').classList.toggle('on',state.guidesVisible);$('guideToggle').textContent=state.guidesVisible?'Guides on':'Guides off';renderGuides()};
+$('snapGuide').onclick=()=>{state.snapGuide=!state.snapGuide;$('snapGuide').classList.toggle('on',state.snapGuide)};
+$('addVGuide').onclick=()=>{state.guides.push({o:'v',p:center().x});renderGuides();toast('Vertical guide added')};
+$('addHGuide').onclick=()=>{state.guides.push({o:'h',p:center().y});renderGuides();toast('Horizontal guide added')};
+$('clearGuides').onclick=()=>{state.guides=[];renderGuides();toast('Guides cleared')};
+$('applyArt').onclick=()=>{
+  const old=state.art;
+  const w=Math.max(1,+$('artW').value||old.w), h=Math.max(1,+$('artH').value||old.h);
+  const cx=old.x+old.w/2, cy=old.y+old.h/2;
+  state.art={active:true,x:cx-w/2,y:cy-h/2,w,h};
+  $('canvasToggle').classList.add('on');
+  $('canvasToggle').textContent='Canvas on';
+  renderArtboard();
+  renderSym();
+  toast('Canvas size applied');
+};
+$('exportArea').onclick=()=>{state.exportArt=!state.exportArt;$('exportArea').classList.toggle('on',state.exportArt);$('exportArea').textContent=state.exportArt?'Export size on':'Export size off';toast(state.exportArt?'Exports use canvas size':'Exports use artwork bounds')};
+$('lock').onclick=()=>{state.locked=!state.locked;$('lock').classList.toggle('on',state.locked);$('lock').textContent=state.locked?'🔒 Grid locked':'🔓 Grid free';toast(state.locked?'Grid locked':'Grid unlocked')};
+$('symGuide').onclick=()=>{state.symGuide=!state.symGuide;$('symGuide').classList.toggle('on',state.symGuide);renderSym()};
+document.querySelectorAll('.sym').forEach(b=>b.onclick=()=>{state.sym=b.dataset.sym;document.querySelectorAll('.sym').forEach(x=>x.classList.toggle('on',x===b));renderSym();toast(state.sym==='none'?'Symmetry off':'Symmetry on')});
+$('color').oninput=e=>setColor(e.target.value,false);$('color').onchange=e=>setColor(e.target.value,true);$('alpha').oninput=e=>{state.alpha=e.target.value/100;$('alphav').textContent=e.target.value+'%'};$('bg').oninput=e=>{state.bg=e.target.value;renderBg()};$('transparent').onclick=()=>{state.transparent=!state.transparent;$('transparent').classList.toggle('on',state.transparent)};
+$('clear').onclick=()=>{if(confirm('Clear all painted cells?')){state.fills.clear();snap();drawCells()}};
+const svg=$('stage');function applyView(){svg.setAttribute('viewBox',`${state.view.x} ${state.view.y} ${state.view.w} ${state.view.h}`);$('zoom').textContent=Math.round(640/state.view.w*100)+'%';render()}
+function screenToWorld(ev){const p=svg.createSVGPoint();p.x=ev.clientX;p.y=ev.clientY;const q=p.matrixTransform(svg.getScreenCTM().inverse());return {x:q.x,y:q.y}}
+function center(){return {x:state.view.x+state.view.w/2,y:state.view.y+state.view.h/2}}
+function canvasCenter(){return state.art.active?{x:state.art.x+state.art.w/2,y:state.art.y+state.art.h/2}:center()}
+function centersAround(){const gs=state.size, v=state.view, pad=gs*3, arr=[];if(state.grid==='fol'){const b0=Math.floor((v.y-pad)*2/(gs*SQ3))-2,b1=Math.ceil((v.y+v.h+pad)*2/(gs*SQ3))+2;const a0=Math.floor((v.x-pad)/gs)-4,a1=Math.ceil((v.x+v.w+pad)/gs)+4;for(let b=b0;b<=b1;b++)for(let a=a0;a<=a1;a++)arr.push({a,b,x:a*gs+b*gs/2,y:b*gs*SQ3/2});}return arr}
+function arcPath(cx,cy,r,a0,a1,sweep=1){return `A ${r} ${r} 0 0 ${sweep} ${cx+r*Math.cos(a1)} ${cy+r*Math.sin(a1)}`}
+function lensPath(c1,c2){const r=state.size, dx=c2.x-c1.x,dy=c2.y-c1.y,d=Math.hypot(dx,dy);if(!d||d>2*r)return'';const mx=(c1.x+c2.x)/2,my=(c1.y+c2.y)/2;const h=Math.sqrt(Math.max(0,r*r-d*d/4));const nx=-dy/d,ny=dx/d;const p1={x:mx+nx*h,y:my+ny*h},p2={x:mx-nx*h,y:my-ny*h};return `M ${p1.x} ${p1.y} A ${r} ${r} 0 0 1 ${p2.x} ${p2.y} A ${r} ${r} 0 0 1 ${p1.x} ${p1.y} Z`;}
+function normAng(a){while(a<0)a+=TAU;while(a>=TAU)a-=TAU;return a}
+function arcToward(o,p,q,toward){const r=state.size,a0=normAng(Math.atan2(p.y-o.y,p.x-o.x)),a1=normAng(Math.atan2(q.y-o.y,q.x-o.x));function mid(sweep){let d=sweep?(a1-a0):(a0-a1);if(d<0)d+=TAU;let m=sweep?a0+d/2:a0-d/2;m=normAng(m);return{x:o.x+r*Math.cos(m),y:o.y+r*Math.sin(m)}}const m1=mid(1),m0=mid(0);const d1=Math.hypot(m1.x-toward.x,m1.y-toward.y),d0=Math.hypot(m0.x-toward.x,m0.y-toward.y);const sw=d1<d0?1:0;return `A ${r} ${r} 0 0 ${sw} ${q.x} ${q.y}`}
+function triPath(c1,c2,c3){const cen={x:(c1.x+c2.x+c3.x)/3,y:(c1.y+c2.y+c3.y)/3};const pts=[c1,c2,c3].sort((a,b)=>Math.atan2(a.y-cen.y,a.x-cen.x)-Math.atan2(b.y-cen.y,b.x-cen.x));let d=`M ${pts[0].x} ${pts[0].y} `;for(let i=0;i<3;i++){const p=pts[i],q=pts[(i+1)%3],o=pts[(i+2)%3];d+=arcToward(o,p,q,cen)+' '}return d+'Z'}
+function commonThirds(c1,c2){const gs=state.size, out=[];for(let da=-2;da<=2;da++)for(let db=-2;db<=2;db++){const a=c1.a+da,b=c1.b+db,c={a,b,x:a*gs+b*gs/2,y:b*gs*SQ3/2};if((c.a===c1.a&&c.b===c1.b)||(c.a===c2.a&&c.b===c2.b))continue;const d1=Math.hypot(c.x-c1.x,c.y-c1.y),d2=Math.hypot(c.x-c2.x,c.y-c2.y);if(Math.abs(d1-gs)<1e-4&&Math.abs(d2-gs)<1e-4)out.push(c)}return out}
+function folPathForSet(arr){arr=arr.slice().sort((u,v)=>(u.a-v.a)||(u.b-v.b));if(arr.length>=3)return{path:triPath(arr[0],arr[1],arr[2]),rule:'nonzero',key:'fol3:'+arr.slice(0,3).map(c=>c.a+','+c.b).join('|')};if(arr.length===2){let path=lensPath(arr[0],arr[1]);for(const c of commonThirds(arr[0],arr[1]))path+=' '+triPath(arr[0],arr[1],c);return{path,rule:'evenodd',key:'fol2:'+arr.map(c=>c.a+','+c.b).join('|')}}return null}
+function squarePath(col,row){const s=state.size,x=col*s,y=row*s;return`M${x} ${y}H${x+s}V${y+s}H${x}Z`}
+function hexPath(q,r){const s=state.size,cx=s*SQ3*(q+r/2),cy=s*1.5*r;let d='';for(let i=0;i<6;i++){const a=Math.PI/180*(60*i-30),x=cx+s*Math.cos(a),y=cy+s*Math.sin(a);d+=(i?'L':'M')+x+' '+y}return d+'Z'}
+function triGridPath(c,r,up){const s=state.size,h=s*SQ3/2,x=c*s/2,y=r*h;return up?`M${x} ${y+h}L${x+s/2} ${y}L${x+s} ${y+h}Z`:`M${x} ${y}L${x+s} ${y}L${x+s/2} ${y+h}Z`}
+function isoPoint(q,r){const s=state.size;return{x:(q-r)*s,y:(q+r)*s/2}}
+function isoTriPath(q,r,t){
+  const a=isoPoint(q,r), b=isoPoint(q+1,r), c=isoPoint(q,r+1), d=isoPoint(q+1,r+1);
+  return t===0?`M${a.x} ${a.y}L${b.x} ${b.y}L${c.x} ${c.y}Z`:`M${d.x} ${d.y}L${c.x} ${c.y}L${b.x} ${b.y}Z`;
+}
+function isoPath(q,r){return isoTriPath(q,r,0)+' '+isoTriPath(q,r,1)}
+function diamondPath(q,r){const s=state.size,cx=(q-r)*s,cy=(q+r)*s/2;return`M${cx} ${cy-s/2}L${cx+s} ${cy}L${cx} ${cy+s/2}L${cx-s} ${cy}Z`}
+function brickPath(c,r){const s=state.size,w=s*1.6,h=s*.8,x=c*w+(r%2?w/2:0),y=r*h;return`M${x} ${y}H${x+w}V${y+h}H${x}Z`}
+function isoFacePath(q,r,f){const s=state.size,cx=(q-r)*s,cy=(q+r)*s/2;
+if(f===0)return `M${cx} ${cy-s/2}L${cx+s} ${cy}L${cx} ${cy+s/2}L${cx-s} ${cy}Z`;
+if(f===1)return `M${cx-s} ${cy}L${cx} ${cy+s/2}L${cx} ${cy+s*1.5}L${cx-s} ${cy+s}Z`;
+return `M${cx+s} ${cy}L${cx} ${cy+s/2}L${cx} ${cy+s*1.5}L${cx+s} ${cy+s}Z`; }
+function symPoints(p){const c=canvasCenter(),dx=p.x-c.x,dy=p.y-c.y,pts=[p];if(state.sym==='h')pts.push({x:c.x-dx,y:p.y});if(state.sym==='v')pts.push({x:p.x,y:c.y-dy});if(state.sym==='hv')pts.push({x:c.x-dx,y:p.y},{x:p.x,y:c.y-dy},{x:c.x-dx,y:c.y-dy});if(state.sym==='3'||state.sym==='6'){const n=state.sym==='6'?6:3;for(let i=1;i<n;i++){const a=i*TAU/n,co=Math.cos(a),si=Math.sin(a);pts.push({x:c.x+dx*co-dy*si,y:c.y+dx*si+dy*co})}}return pts}
+function drawCells(){const g=$('cells');g.innerHTML='';for(const [k,o] of state.fills){const p=document.createElementNS('http://www.w3.org/2000/svg','path');p.setAttribute('d',o.path);p.setAttribute('fill',o.color);p.setAttribute('fill-opacity',o.alpha);p.setAttribute('class','cell');if(o.seamless){p.setAttribute('stroke',o.color);p.setAttribute('stroke-width',Math.max(0.35,state.size/180));p.setAttribute('stroke-linejoin','round');p.setAttribute('stroke-linecap','round');p.setAttribute('paint-order','stroke fill');}if(o.rule)p.setAttribute('fill-rule',o.rule);g.appendChild(p)}renderBg()}
+function renderBg(){const r=$('bgRect');r.setAttribute('x',state.view.x);r.setAttribute('y',state.view.y);r.setAttribute('width',state.view.w);r.setAttribute('height',state.view.h);r.setAttribute('fill',state.bg)}
+function renderGrid(){const g=$('grid');g.innerHTML='';g.style.setProperty('--fol-stroke', state.constructColor);if(!state.lines)return;const gs=state.size,v=state.view;if(state.grid==='fol'){for(const c of centersAround()){const e=document.createElementNS('http://www.w3.org/2000/svg','circle');e.setAttribute('cx',c.x);e.setAttribute('cy',c.y);e.setAttribute('r',gs);e.setAttribute('class','folCircle');g.appendChild(e)} if(state.construct)addConstructionLines(g)}else if(state.grid==='square'){const x0=Math.floor(v.x/gs)*gs,x1=v.x+v.w,y0=Math.floor(v.y/gs)*gs,y1=v.y+v.h;for(let x=x0;x<=x1;x+=gs){line(g,x,v.y,x,y1)}for(let y=y0;y<=y1;y+=gs){line(g,v.x,y,x1,y)}}else if(state.grid==='hex'){const pad=gs*3;let q0=Math.floor((v.x-pad)/(SQ3*gs))-4,q1=Math.ceil((v.x+v.w+pad)/(SQ3*gs))+4,r0=Math.floor((v.y-pad)/(1.5*gs))-3,r1=Math.ceil((v.y+v.h+pad)/(1.5*gs))+3;for(let q=q0;q<=q1;q++)for(let r=r0;r<=r1;r++){const p=document.createElementNS('http://www.w3.org/2000/svg','path');p.setAttribute('d',hexPath(q,r));p.setAttribute('class','gridLine');g.appendChild(p)}}else if(state.grid==='triangle'){const h=gs*SQ3/2;for(let r=Math.floor(v.y/h)-2;r<=Math.ceil((v.y+v.h)/h)+2;r++)for(let c=Math.floor(v.x/(gs/2))-4;c<=Math.ceil((v.x+v.w)/(gs/2))+4;c++){const p=document.createElementNS('http://www.w3.org/2000/svg','path');p.setAttribute('d',triGridPath(c,r,((c+r)%2===0)));p.setAttribute('class','gridLine');g.appendChild(p)}}else if(state.grid==='diamond'||state.grid==='isometric'){const pad=gs*4;for(let q=-40;q<=40;q++)for(let r=-40;r<=40;r++){const cx=(q-r)*gs,cy=(q+r)*gs/2;if(cx<v.x-pad||cx>v.x+v.w+pad||cy<v.y-pad||cy>v.y+v.h+pad)continue;if(state.grid==='diamond'){const p=document.createElementNS('http://www.w3.org/2000/svg','path');p.setAttribute('d',diamondPath(q,r));p.setAttribute('class','gridLine');g.appendChild(p)}else{for(let t=0;t<2;t++){const p=document.createElementNS('http://www.w3.org/2000/svg','path');p.setAttribute('d',isoTriPath(q,r,t));p.setAttribute('class','gridLine');g.appendChild(p)}}}}else if(state.grid==='brick'){const w=gs*1.6,h=gs*.8;for(let r=Math.floor(v.y/h)-2;r<=Math.ceil((v.y+v.h)/h)+2;r++)for(let c=Math.floor(v.x/w)-3;c<=Math.ceil((v.x+v.w)/w)+3;c++){const p=document.createElementNS('http://www.w3.org/2000/svg','path');p.setAttribute('d',brickPath(c,r));p.setAttribute('class','gridLine');g.appendChild(p)}}}
+function line(g,x1,y1,x2,y2){const l=document.createElementNS('http://www.w3.org/2000/svg','line');l.setAttribute('x1',x1);l.setAttribute('y1',y1);l.setAttribute('x2',x2);l.setAttribute('y2',y2);l.setAttribute('class','gridLine');g.appendChild(l)}
+function renderSym(){
+  const g=$('sym');g.innerHTML='';if(!state.symGuide||state.sym==='none')return;
+  const useArt=state.art.active;
+  const c=canvasCenter();
+  const bx0=useArt?state.art.x:state.view.x, by0=useArt?state.art.y:state.view.y;
+  const bx1=useArt?state.art.x+state.art.w:state.view.x+state.view.w, by1=useArt?state.art.y+state.art.h:state.view.y+state.view.h;
+  const R=Math.max(bx1-bx0,by1-by0);
+  if(state.sym==='h'||state.sym==='hv')lineSym(g,c.x,by0,c.x,by1);
+  if(state.sym==='v'||state.sym==='hv')lineSym(g,bx0,c.y,bx1,c.y);
+  if(state.sym==='3'||state.sym==='6'){const n=state.sym==='6'?6:3;for(let i=0;i<n;i++){const a=i*TAU/n;lineSym(g,c.x-Math.cos(a)*R,c.y-Math.sin(a)*R,c.x+Math.cos(a)*R,c.y+Math.sin(a)*R)}}
+}
+function lineSym(g,x1,y1,x2,y2){const halo=document.createElementNS('http://www.w3.org/2000/svg','line');halo.setAttribute('x1',x1);halo.setAttribute('y1',y1);halo.setAttribute('x2',x2);halo.setAttribute('y2',y2);halo.setAttribute('class','symLineHalo');g.appendChild(halo);const l=document.createElementNS('http://www.w3.org/2000/svg','line');l.setAttribute('x1',x1);l.setAttribute('y1',y1);l.setAttribute('x2',x2);l.setAttribute('y2',y2);l.setAttribute('class','symLine');g.appendChild(l)}
+function render(){renderBg();renderArtboard();renderGrid();renderSym();renderGuides();drawCells()}
+
+function renderArtboard(){
+  const g=$('artboardLayer'); g.innerHTML='';
+  if(!state.art.active)return;
+  const a=state.art,v=state.view;
+  [['M',v.x,v.y,'H',v.x+v.w,'V',a.y,'H',v.x,'Z'],['M',v.x,a.y+a.h,'H',v.x+v.w,'V',v.y+v.h,'H',v.x,'Z'],
+   ['M',v.x,a.y,'H',a.x,'V',a.y+a.h,'H',v.x,'Z'],['M',a.x+a.w,a.y,'H',v.x+v.w,'V',a.y+a.h,'H',a.x+a.w,'Z']].forEach(d=>{
+    const p=document.createElementNS('http://www.w3.org/2000/svg','path');p.setAttribute('d',d.join(' '));p.setAttribute('class','artShade');g.appendChild(p);
+  });
+  const r=document.createElementNS('http://www.w3.org/2000/svg','rect');r.setAttribute('x',a.x);r.setAttribute('y',a.y);r.setAttribute('width',a.w);r.setAttribute('height',a.h);r.setAttribute('class','artRect');g.appendChild(r);
+  ['artW','artH'].forEach((id,i)=>{const vals=[a.w,a.h]; if(document.activeElement!==$(id)) $(id).value=Math.round(vals[i]);});
+}
+function renderGuides(){
+  const g=$('guides'); g.innerHTML='';
+  if(!state.guidesVisible)return;
+  const v=state.view;
+  state.guides.forEach((gd,i)=>{
+    const l=document.createElementNS('http://www.w3.org/2000/svg','line');
+    if(gd.o==='v'){l.setAttribute('x1',gd.p);l.setAttribute('x2',gd.p);l.setAttribute('y1',v.y);l.setAttribute('y2',v.y+v.h)}
+    else{l.setAttribute('x1',v.x);l.setAttribute('x2',v.x+v.w);l.setAttribute('y1',gd.p);l.setAttribute('y2',gd.p)}
+    l.setAttribute('class','guideLine');l.dataset.i=i;g.appendChild(l);
+  });
+}
+function folGuideLine(g,x1,y1,x2,y2){
+  const l=document.createElementNS('http://www.w3.org/2000/svg','line');
+  l.setAttribute('x1',x1); l.setAttribute('y1',y1);
+  l.setAttribute('x2',x2); l.setAttribute('y2',y2);
+  l.setAttribute('stroke',state.constructColor); l.setAttribute('class','constructLine'); g.appendChild(l);
+}
+function addConstructionLines(g){
+  // Repeating construction network like the reference, across the whole Flower of Life grid.
+  // Same colour is used for circles + construction lines so nothing appears blue.
+  const gs=state.size, v=state.view, pad=gs*3;
+  const xmin=v.x-pad, xmax=v.x+v.w+pad, ymin=v.y-pad, ymax=v.y+v.h+pad;
+  const fine=gs/2;
+  const h=fine*SQ3/2;
+  // Horizontal rows
+  for(let y=Math.floor(ymin/h)*h; y<=ymax; y+=h) folGuideLine(g,xmin,y,xmax,y);
+  // Vertical columns
+  for(let x=Math.floor(xmin/fine)*fine; x<=xmax; x+=fine) folGuideLine(g,x,ymin,x,ymax);
+  // Diagonal 60° and -60° construction lines
+  const m=SQ3;
+  const cStep=h;
+  const cMin1=ymin-m*xmax, cMax1=ymax-m*xmin;
+  for(let c=Math.floor(cMin1/cStep)*cStep; c<=cMax1; c+=cStep) folGuideLine(g,xmin,m*xmin+c,xmax,m*xmax+c);
+  const cMin2=ymin+m*xmin, cMax2=ymax+m*xmax;
+  for(let c=Math.floor(cMin2/cStep)*cStep; c<=cMax2; c+=cStep) folGuideLine(g,xmin,-m*xmin+c,xmax,-m*xmax+c);
+}
+function folTrianglePathFine(c,r,up){
+  // Small independent colourable spaces. Each click paints ONE small area only.
+  const s=state.size/2, h=s*SQ3/2, x=c*s/2, y=r*h;
+  return up ? `M${x} ${y+h}L${x+s/2} ${y}L${x+s} ${y+h}Z`
+            : `M${x} ${y}L${x+s} ${y}L${x+s/2} ${y+h}Z`;
+}
+function folTriangleCell(p){
+  const s=state.size/2, h=s*SQ3/2;
+  const r=Math.floor(p.y/h);
+  const c=Math.floor(p.x/(s/2));
+  const up=((c+r)%2===0);
+  return {key:`folFine:${c},${r},${up?1:0}`, path:folTrianglePathFine(c,r,up), rule:'nonzero'};
+}
+function snapPoint(p){
+  let x=p.x,y=p.y;
+  if(state.snapGrid){const gs=state.size;x=Math.round(x/gs)*gs;y=Math.round(y/gs)*gs}
+  if(state.snapGuide){state.guides.forEach(g=>{if(g.o==='v'&&Math.abs(x-g.p)<state.size*.2)x=g.p;if(g.o==='h'&&Math.abs(y-g.p)<state.size*.2)y=g.p})}
+  return{x,y}
+}
+
+let drag=false,last=null,moved=false;
+svg.addEventListener('pointerdown',e=>{
+  svg.setPointerCapture(e.pointerId);drag=true;last={x:e.clientX,y:e.clientY};moved=false;
+});
+svg.addEventListener('pointermove',e=>{
+  const p=screenToWorld(e);
+  // Performance fix: Flower of Life white-space detection is heavy, so do NOT
+  // run the flood-fill on every mouse move. It now runs only when you click.
+  if(state.grid==='fol') $('hover').setAttribute('d','');
+  else { const hit=keyAt(p); $('hover').setAttribute('d',hit?hit.path:''); }
+  if(!drag)return;
+  const dx=e.clientX-last.x,dy=e.clientY-last.y;
+  if(Math.abs(dx)+Math.abs(dy)>2)moved=true;
+  if(state.tool==='pan'&&!state.locked){state.view.x-=dx*state.view.w/svg.clientWidth;state.view.y-=dy*state.view.h/svg.clientHeight;applyView()}
+  last={x:e.clientX,y:e.clientY};
+});
+function findFillAt(pt){
+  // Erase/Pick used to regenerate a fresh key via keyAt() and require it to match
+  // the stored key exactly. For Flower-of-Life cells that key is derived from the
+  // local curve signature around the click point, which can come out slightly
+  // different from the paint-time key even for a click inside the same painted
+  // shape - so erase would silently do nothing. This instead hit-tests the click
+  // against the real rendered geometry of each painted fill, so clicking on a
+  // painted shape always finds it.
+  if(!state.fills.size) return null;
+  const tmp=document.createElementNS('http://www.w3.org/2000/svg','path');
+  tmp.style.visibility='hidden';
+  $('cells').appendChild(tmp);
+  const svgPt=svg.createSVGPoint(); svgPt.x=pt.x; svgPt.y=pt.y;
+  let found=null;
+  for(const [k,o] of state.fills){
+    tmp.setAttribute('d',o.path);
+    tmp.setAttribute('fill-rule',o.rule||'nonzero');
+    try{ if(tmp.isPointInFill(svgPt)) found=[k,o]; }catch(err){}
+  }
+  $('cells').removeChild(tmp);
+  return found;
+}
+svg.addEventListener('pointerup',e=>{
+  if(!moved&&state.tool!=='pan'){
+    const p=screenToWorld(e);
+    if(state.tool==='pick'){const found=findFillAt(p);if(found)setColor(found[1].color);return}
+    snap();
+    for(const sp of symPoints(p)){
+      if(state.tool==='erase'){const found=findFillAt(sp);if(found)state.fills.delete(found[0]);continue}
+      const h=keyAt(sp);if(!h)continue;
+      state.fills.set(h.key,{path:h.path,rule:h.rule||'nonzero',color:state.color,alpha:state.alpha,seamless:!!h.seamless});
+    }
+    drawCells();
+  }
+  drag=false;
+});
+svg.addEventListener('wheel',e=>{e.preventDefault();if(state.locked)return toast('Grid is locked');const p=screenToWorld(e),f=e.deltaY<0?.88:1.13;state.view.x=p.x-(p.x-state.view.x)*f;state.view.y=p.y-(p.y-state.view.y)*f;state.view.w*=f;state.view.h*=f;applyView()},{passive:false});
+document.addEventListener('keydown',e=>{if(e.key==='l'||e.key==='L')$('lock').click();if(e.key==='s'||e.key==='S')$('symGuide').click();if(e.key==='e'||e.key==='E')setTool(state.tool==='erase'?'paint':'erase');if((e.ctrlKey||e.metaKey)&&e.key==='z'){e.preventDefault();e.shiftKey?$('redo').click():$('undo').click()}});
+function exportBounds(){
+  if(state.exportArt&&state.art.active)return {x:state.art.x,y:state.art.y,w:state.art.w,h:state.art.h};
+  if(!state.fills.size)return {x:state.view.x,y:state.view.y,w:state.view.w,h:state.view.h};
+  // Measure real SVG geometry instead of regex-parsing path strings: path
+  // commands like H/V (used by the square and brick grids) don't emit an
+  // x,y pair, which broke the old numeric-pairing bounds and produced NaN
+  // export dimensions (blank/failed PNG & SVG) for those grids.
+  let minX=Infinity,minY=Infinity,maxX=-Infinity,maxY=-Infinity;
+  const tmp=document.createElementNS('http://www.w3.org/2000/svg','path');
+  tmp.style.visibility='hidden';
+  $('cells').appendChild(tmp);
+  for(const o of state.fills.values()){
+    tmp.setAttribute('d',o.path);
+    let bb=null;
+    try{ bb=tmp.getBBox(); }catch(err){ bb=null; }
+    if(!bb || (bb.width===0 && bb.height===0)) continue;
+    minX=Math.min(minX,bb.x); maxX=Math.max(maxX,bb.x+bb.width);
+    minY=Math.min(minY,bb.y); maxY=Math.max(maxY,bb.y+bb.height);
+  }
+  $('cells').removeChild(tmp);
+  if(!isFinite(minX))return {x:state.view.x,y:state.view.y,w:state.view.w,h:state.view.h};
+  const pad=state.lines?state.size*.08:0;
+  return{x:minX-pad,y:minY-pad,w:(maxX-minX)+pad*2,h:(maxY-minY)+pad*2};
+}
+function svgString(includeLines=true){const b=exportBounds(),bg=state.transparent?'':`<rect x="${b.x}" y="${b.y}" width="${b.w}" height="${b.h}" fill="${state.bg}"/>`;let s=`<svg xmlns="http://www.w3.org/2000/svg" width="${b.w}" height="${b.h}" viewBox="${b.x} ${b.y} ${b.w} ${b.h}">\n${bg}\n`;for(const o of state.fills.values()){const seam=o.seamless?` stroke="${o.color}" stroke-width="${Math.max(0.35,state.size/180)}" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke fill"`:'';s+=`<path d="${o.path}" fill="${o.color}" fill-opacity="${o.alpha}" fill-rule="${o.rule||'nonzero'}"${seam}/>\n`; }if(includeLines&&state.lines){s+=`<g fill="none" stroke="${state.constructColor}" stroke-width="1.4" vector-effect="non-scaling-stroke" opacity=".9">\n`;const oldView={...state.view};state.view={x:b.x,y:b.y,w:b.w,h:b.h};if(state.grid==='fol'){for(const c of centersAround())s+=`<circle cx="${c.x}" cy="${c.y}" r="${state.size}"/>\n`; if(state.construct){const R=Math.max(b.w,b.h)*1.2, angles=[0,Math.PI/2,Math.PI/6,-Math.PI/6]; angles.forEach(a=>{s+=`<line x1="${-Math.cos(a)*R}" y1="${-Math.sin(a)*R}" x2="${Math.cos(a)*R}" y2="${Math.sin(a)*R}"/>\n`;});}}else if(state.grid==='square'){const gs=state.size,x0=Math.floor(b.x/gs)*gs,x1=b.x+b.w,y0=Math.floor(b.y/gs)*gs,y1=b.y+b.h;for(let x=x0;x<=x1;x+=gs)s+=`<line x1="${x}" y1="${b.y}" x2="${x}" y2="${y1}"/>\n`;for(let y=y0;y<=y1;y+=gs)s+=`<line x1="${b.x}" y1="${y}" x2="${x1}" y2="${y}"/>\n`;}else if(state.grid==='hex'){let gs=state.size,q0=Math.floor((b.x-gs*3)/(SQ3*gs))-4,q1=Math.ceil((b.x+b.w+gs*3)/(SQ3*gs))+4,r0=Math.floor((b.y-gs*3)/(1.5*gs))-3,r1=Math.ceil((b.y+b.h+gs*3)/(1.5*gs))+3;for(let q=q0;q<=q1;q++)for(let r=r0;r<=r1;r++)s+=`<path d="${hexPath(q,r)}"/>\n`;}else if(['triangle','diamond','brick','isometric'].includes(state.grid)){const oldLines=state.lines;state.lines=true;const temp=document.createElementNS('http://www.w3.org/2000/svg','g');const oldView2={...state.view};state.view={x:b.x,y:b.y,w:b.w,h:b.h};state.lines=true;const savedGrid=state.grid;const gs=state.size,v=state.view;if(savedGrid==='triangle'){const h=gs*SQ3/2;for(let r=Math.floor(v.y/h)-2;r<=Math.ceil((v.y+v.h)/h)+2;r++)for(let c=Math.floor(v.x/(gs/2))-4;c<=Math.ceil((v.x+v.w)/(gs/2))+4;c++)s+=`<path d="${triGridPath(c,r,((c+r)%2===0))}"/>\n`;}else if(savedGrid==='diamond'||savedGrid==='isometric'){const pad=gs*4;for(let q=-40;q<=40;q++)for(let r=-40;r<=40;r++){const cx=(q-r)*gs,cy=(q+r)*gs/2;if(cx<v.x-pad||cx>v.x+v.w+pad||cy<v.y-pad||cy>v.y+v.h+pad)continue;s+=`<path d="${savedGrid==='diamond'?diamondPath(q,r):isoPath(q,r)}"/>\n`;}}else if(savedGrid==='brick'){const w=gs*1.6,h=gs*.8;for(let r=Math.floor(v.y/h)-2;r<=Math.ceil((v.y+v.h)/h)+2;r++)for(let c=Math.floor(v.x/w)-3;c<=Math.ceil((v.x+v.w)/w)+3;c++)s+=`<path d="${brickPath(c,r)}"/>\n`;}state.view=oldView2;}state.view=oldView;s+='</g>\n'}return s+'</svg>';}
+function download(name,blob){const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
+$('svg').onclick=()=>{download('zakhrafah-vector.svg',new Blob([svgString(true)],{type:'image/svg+xml'}));toast('SVG exported')};
+$('copySvg').onclick=async()=>{await navigator.clipboard.writeText(svgString(true));toast('SVG copied')};
+$('png').onclick=()=>{const str=svgString(true),img=new Image(),url=URL.createObjectURL(new Blob([str],{type:'image/svg+xml'}));img.onload=()=>{const b=exportBounds(),scale=4096/Math.max(b.w,b.h),can=document.createElement('canvas');can.width=Math.round(b.w*scale);can.height=Math.round(b.h*scale);const ctx=can.getContext('2d');ctx.imageSmoothingEnabled=true;ctx.drawImage(img,0,0,can.width,can.height);can.toBlob(blob=>download('zakhrafah-4096.png',blob),'image/png');URL.revokeObjectURL(url);toast('PNG exported')};img.src=url};
+
+
+/* ─────────────────────────────────────────────
+   Precise Flower of Life atomic-cell picker
+   This replaces the earlier "nearest 2/3 circles" logic.
+   A Flower of Life cell is now defined by the full inside/outside
+   circle membership at the click point, so the small internal spaces
+   can be selected independently.
+───────────────────────────────────────────── */
+function folCandidateCenters(p){
+  const gs=state.size;
+  const b=Math.round(p.y*2/(gs*SQ3));
+  const a=Math.round((p.x-b*gs/2)/gs);
+  const arr=[];
+  for(let db=-3;db<=3;db++) for(let da=-3;da<=3;da++){
+    const ca=a+da, cb=b+db;
+    arr.push({a:ca,b:cb,x:ca*gs+cb*gs/2,y:cb*gs*SQ3/2,id:ca+','+cb});
+  }
+  return arr;
+}
+function folInsideSet(p, centers){
+  const gs=state.size, eps=0.015;
+  return centers.filter(c=>Math.hypot(p.x-c.x,p.y-c.y)<gs-eps)
+                .sort((u,v)=>(u.a-v.a)||(u.b-v.b));
+}
+function folClassKey(set){return set.map(c=>c.id).join('|');}
+function folSameSetAt(x,y, inIds, centers){
+  const gs=state.size, tol=0.035;
+  for(const c of centers){
+    const inside=Math.hypot(x-c.x,y-c.y) < gs-tol;
+    if(inside !== inIds.has(c.id)) return false;
+  }
+  return true;
+}
+function folRegionPathFromMembership(inSet, centers){
+  if(!inSet.length) return null;
+  const gs=state.size;
+  const inIds=new Set(inSet.map(c=>c.id));
+  const pts=[];
+  // Build boundary by sampling only arcs that separate this cell from neighbours.
+  // The result is a clean Illustrator-safe vector polygon, not bitmap tracing.
+  const steps=180;
+  for(const c of centers){
+    for(let i=0;i<steps;i++){
+      const a=(i/steps)*TAU;
+      const x=c.x+gs*Math.cos(a), y=c.y+gs*Math.sin(a);
+      // Test a tiny offset toward the side where this region exists.
+      const nx=Math.cos(a), ny=Math.sin(a);
+      const candidates=inIds.has(c.id)
+        ? [[x-nx*0.06,y-ny*0.06],[x+nx*0.06,y+ny*0.06]]
+        : [[x+nx*0.06,y+ny*0.06],[x-nx*0.06,y-ny*0.06]];
+      if(folSameSetAt(candidates[0][0],candidates[0][1],inIds,centers) || folSameSetAt(candidates[1][0],candidates[1][1],inIds,centers)){
+        // De-duplicate close samples.
+        const last=pts[pts.length-1];
+        if(!last || Math.hypot(last.x-x,last.y-y)>gs*0.006) pts.push({x,y});
+      }
+    }
+  }
+  if(pts.length<8) return null;
+  // Remove far noise, then order around centroid. For Flower-of-Life atomic cells,
+  // these regions are compact and star-sort gives a stable editable path.
+  let cx=0,cy=0; pts.forEach(p=>{cx+=p.x;cy+=p.y}); cx/=pts.length; cy/=pts.length;
+  pts.sort((p,q)=>Math.atan2(p.y-cy,p.x-cx)-Math.atan2(q.y-cy,q.x-cx));
+  // Reduce near-duplicate angular samples while keeping smoothness.
+  const clean=[];
+  for(const p of pts){
+    const prev=clean[clean.length-1];
+    if(!prev || Math.hypot(prev.x-p.x,prev.y-p.y)>0.35) clean.push(p);
+  }
+  if(clean.length>2 && Math.hypot(clean[0].x-clean.at(-1).x,clean[0].y-clean.at(-1).y)<0.5) clean.pop();
+  if(clean.length<8) return null;
+  return 'M '+clean.map(p=>`${+p.x.toFixed(3)} ${+p.y.toFixed(3)}`).join(' L ')+' Z';
+}
+function keyAt(p){
+  const gs=state.size;
+  if(state.grid==='square'){
+    const c=Math.floor(p.x/gs), r=Math.floor(p.y/gs);
+    return {key:`sq:${c},${r}`, path:squarePath(c,r), rule:'nonzero'};
+  }
+  if(state.grid==='hex'){
+    let q=(p.x*(SQ3/3)-p.y/3)/gs, r=p.y*2/3/gs;
+    let x=q,z=r,y=-x-z;
+    let rx=Math.round(x),ry=Math.round(y),rz=Math.round(z);
+    const dx=Math.abs(rx-x),dy=Math.abs(ry-y),dz=Math.abs(rz-z);
+    if(dx>dy&&dx>dz)rx=-ry-rz; else if(dy>dz)ry=-rx-rz; else rz=-rx-ry;
+    return {key:`hx:${rx},${rz}`, path:hexPath(rx,rz), rule:'nonzero'};
+  }
+ if(state.grid==='triangle'){const h=gs*SQ3/2;const r=Math.floor(p.y/h);const c=Math.floor(p.x/(gs/2));const localX=(p.x-c*gs/2)/(gs/2), localY=(p.y-r*h)/h;const up=((c+r)%2===0);return{key:`tr:${c},${r},${up?1:0}`,path:triGridPath(c,r,up),rule:'nonzero'}}
+ if(state.grid==='diamond'){const q=Math.floor((p.y/(gs/2)+p.x/gs)/2);const r=Math.floor((p.y/(gs/2)-p.x/gs)/2);return{key:`dm:${q},${r}`,path:diamondPath(q,r),rule:'nonzero'}}
+ if(state.grid==='brick'){const w=gs*1.6,h=gs*.8;const r=Math.floor(p.y/h);const c=Math.floor((p.x-(r%2?w/2:0))/w);return{key:`br:${c},${r}`,path:brickPath(c,r),rule:'nonzero'}}
+ if(state.grid==='isometric'){
+   const u=(p.y/(gs/2)+p.x/gs)/2, v=(p.y/(gs/2)-p.x/gs)/2;
+   const q=Math.floor(u), r=Math.floor(v), fu=u-q, fv=v-r;
+   const t=(fu+fv<1)?0:1;
+   return{key:`iso:${q},${r},${t}`,path:isoTriPath(q,r,t),rule:'nonzero'}
+ }
+  // Flower of Life: flood-pick the actual WHITE SPACE bounded by the visible
+  // circles + construction lines, instead of filling the straight triangle guide.
+  return folWhiteSpaceCell(p);
+}
+
+
+function folNearestLineDistance(x,y){
+  const gs=state.size, fine=gs/2, h=fine*SQ3/2, m=SQ3;
+  const dv=Math.abs(x-Math.round(x/fine)*fine);
+  const dh=Math.abs(y-Math.round(y/h)*h);
+  const c1=y-m*x, c1n=Math.round(c1/h)*h;
+  const dd1=Math.abs(c1-c1n)/Math.sqrt(1+m*m);
+  const c2=y+m*x, c2n=Math.round(c2/h)*h;
+  const dd2=Math.abs(c2-c2n)/Math.sqrt(1+m*m);
+  return Math.min(dv,dh,dd1,dd2);
+}
+
+/* ─────────────────────────────────────────────
+   V10 Flower-of-Life fill
+   This is no longer a raster/block flood fill. It builds the selected white
+   space from the actual vector boundaries: circles + straight construction
+   lines. The result is a single smooth SVG path, so it will not pixelate.
+───────────────────────────────────────────── */
+function folLocalCurves(seed){
+  const gs=state.size, fine=gs/2, h=fine*SQ3/2, m=SQ3;
+  const R=gs*1.75;
+  const curves=[];
+  // Local circle boundaries
+  const b0=Math.floor((seed.y-R)*2/(gs*SQ3))-3, b1=Math.ceil((seed.y+R)*2/(gs*SQ3))+3;
+  const a0=Math.floor((seed.x-R)/gs)-4, a1=Math.ceil((seed.x+R)/gs)+4;
+  for(let b=b0;b<=b1;b++) for(let a=a0;a<=a1;a++){
+    const x=a*gs+b*gs/2, y=b*gs*SQ3/2;
+    if(Math.hypot(seed.x-x, seed.y-y) < R+gs*1.35) curves.push({type:'circle',x,y,r:gs,id:`c:${a},${b}`});
+  }
+  if(state.construct){
+    // Straight construction lines across all flowers: vertical, horizontal, +60, -60.
+    for(let x=Math.floor((seed.x-R)/fine)*fine; x<=seed.x+R; x+=fine) curves.push({type:'v',x,id:`v:${Math.round(x*1000)}`});
+    for(let y=Math.floor((seed.y-R)/h)*h; y<=seed.y+R; y+=h) curves.push({type:'h',y,id:`h:${Math.round(y*1000)}`});
+    const cMin1=(seed.y-R)-m*(seed.x+R), cMax1=(seed.y+R)-m*(seed.x-R);
+    for(let c=Math.floor(cMin1/h)*h; c<=cMax1; c+=h) curves.push({type:'p',m,c,id:`p:${Math.round(c*1000)}`});
+    const cMin2=(seed.y-R)+m*(seed.x-R), cMax2=(seed.y+R)+m*(seed.x+R);
+    for(let c=Math.floor(cMin2/h)*h; c<=cMax2; c+=h) curves.push({type:'n',m:-m,c,id:`n:${Math.round(c*1000)}`});
+  }
+  return curves;
+}
+function folEval(curve,x,y){
+  if(curve.type==='circle') return Math.hypot(x-curve.x,y-curve.y)-curve.r; // <0 inside
+  if(curve.type==='v') return x-curve.x;
+  if(curve.type==='h') return y-curve.y;
+  return y-curve.m*x-curve.c;
+}
+function folSeedSigns(seed, curves){
+  const signs=[];
+  // If the user clicks exactly on a line, use a tiny nudge to avoid unstable signs.
+  let sx=seed.x, sy=seed.y;
+  for(let n=0;n<6;n++){
+    let ok=true;
+    for(const cv of curves){ if(Math.abs(folEval(cv,sx,sy))<0.04){ok=false;break;} }
+    if(ok) break;
+    sx+=0.17*(n+1); sy+=0.11*(n+1);
+  }
+  curves.forEach(cv=>signs.push(folEval(cv,sx,sy)<0?-1:1));
+  return signs;
+}
+function folPointInRegion(x,y, curves, signs, skip=-1, tol=0.06){
+  for(let i=0;i<curves.length;i++){
+    if(i===skip) continue;
+    const v=folEval(curves[i],x,y);
+    if(signs[i]<0 && v>tol) return false;
+    if(signs[i]>0 && v<-tol) return false;
+  }
+  return true;
+}
+function folAddBoundarySamples(curve, idx, seed, curves, signs, pts){
+  const gs=state.size, R=gs*1.85;
+  const xmin=seed.x-R, xmax=seed.x+R, ymin=seed.y-R, ymax=seed.y+R;
+  const stepCount=curve.type==='circle'?720:360;
+  const eps=Math.max(0.035, gs/900);
+  function add(x,y){
+    if(x<xmin||x>xmax||y<ymin||y>ymax) return;
+    // The point belongs to this exact cell if the rest of the boundaries keep
+    // the same inside/outside relation as the click point.
+    if(!folPointInRegion(x,y,curves,signs,idx,eps*8)) return;
+    pts.push({x,y});
+  }
+  if(curve.type==='circle'){
+    for(let i=0;i<stepCount;i++){
+      const a=i*TAU/stepCount;
+      add(curve.x+curve.r*Math.cos(a), curve.y+curve.r*Math.sin(a));
+    }
+    return;
+  }
+  if(curve.type==='v'){
+    for(let i=0;i<=stepCount;i++){ const y=ymin+(ymax-ymin)*i/stepCount; add(curve.x,y); }
+    return;
+  }
+  if(curve.type==='h'){
+    for(let i=0;i<=stepCount;i++){ const x=xmin+(xmax-xmin)*i/stepCount; add(x,curve.y); }
+    return;
+  }
+  // y = m*x + c, clipped to local box
+  for(let i=0;i<=stepCount;i++){
+    const x=xmin+(xmax-xmin)*i/stepCount, y=curve.m*x+curve.c;
+    add(x,y);
+  }
+}
+function folSmoothPolygon(points, seed){
+  if(points.length<8) return null;
+  // Remove duplicates first
+  const seen=new Set(), unique=[];
+  for(const p of points){
+    const k=Math.round(p.x*10)+','+Math.round(p.y*10);
+    if(!seen.has(k)){seen.add(k); unique.push(p);}
+  }
+  if(unique.length<8) return null;
+  let cx=0, cy=0;
+  unique.forEach(p=>{cx+=p.x;cy+=p.y}); cx/=unique.length; cy/=unique.length;
+  // Clicked white spaces are compact and mostly convex/curved-convex; angular
+  // ordering avoids the raster stair-step issue and keeps one continuous path.
+  unique.sort((a,b)=>Math.atan2(a.y-cy,a.x-cx)-Math.atan2(b.y-cy,b.x-cx));
+  // Drop points that are too close, but keep enough detail for smooth circles.
+  const minGap=Math.max(0.18, state.size/260), clean=[];
+  for(const p of unique){
+    const q=clean[clean.length-1];
+    if(!q || Math.hypot(p.x-q.x,p.y-q.y)>minGap) clean.push(p);
+  }
+  if(clean.length>2 && Math.hypot(clean[0].x-clean.at(-1).x,clean[0].y-clean.at(-1).y)<minGap) clean.pop();
+  if(clean.length<8) return null;
+  return clean;
+}
+function folBoundaryPathRadial(points){
+  if(points.length<12) return '';
+  // Smooth closed path using quadratic curves through the sampled boundary points.
+  const mid=(a,b)=>({x:(a.x+b.x)/2,y:(a.y+b.y)/2});
+  let m0=mid(points[points.length-1], points[0]);
+  let d=`M ${+m0.x.toFixed(3)} ${+m0.y.toFixed(3)} `;
+  for(let i=0;i<points.length;i++){
+    const p=points[i], q=points[(i+1)%points.length], m=mid(p,q);
+    d+=`Q ${+p.x.toFixed(3)} ${+p.y.toFixed(3)} ${+m.x.toFixed(3)} ${+m.y.toFixed(3)} `;
+  }
+  return d+'Z';
+}
+function folWhiteSpaceCell(seed){
+  const curves=folLocalCurves(seed);
+  const signs=folSeedSigns(seed, curves);
+
+  // V11 fix: no angular sorting of unrelated boundary samples.
+  // The previous method could collect far segments from nearby lines/circles and
+  // connect them together, causing sharp spikes. This version traces only the
+  // connected white space around the click point using radial boundary search.
+  const gs=state.size;
+  const samples=288;
+  const maxR=gs*1.28;
+  const step=gs/80;
+  const pts=[];
+
+  // Nudge the seed very slightly if it is exactly on a guide line.
+  let sx=seed.x, sy=seed.y;
+  if(!folPointInRegion(sx,sy,curves,signs,-1,0.02)){
+    sx+=0.21; sy+=0.13;
+  }
+
+  for(let i=0;i<samples;i++){
+    const a=i*TAU/samples, ca=Math.cos(a), sa=Math.sin(a);
+    let lo=0, hi=0, found=false;
+
+    // Walk out from the click until we leave this exact white space.
+    for(let t=step; t<=maxR; t+=step){
+      const x=sx+ca*t, y=sy+sa*t;
+      if(!folPointInRegion(x,y,curves,signs,-1,0.04)){
+        hi=t; found=true; break;
+      }
+      lo=t;
+    }
+    if(!found){
+      // Do not shoot across the canvas. A bounded local cap removes the long
+      // accidental spikes while still giving a full-looking fill.
+      hi=maxR; lo=maxR-step;
+    }
+
+    // Binary refine to get a smooth vector boundary instead of blocky pixels.
+    for(let k=0;k<12;k++){
+      const mid=(lo+hi)/2;
+      const x=sx+ca*mid, y=sy+sa*mid;
+      if(folPointInRegion(x,y,curves,signs,-1,0.02)) lo=mid; else hi=mid;
+    }
+    pts.push({x:sx+ca*lo, y:sy+sa*lo});
+  }
+
+  const d=folBoundaryPathRadial(pts);
+  if(!d) return null;
+
+  // Stable key based on local vector boundaries and signs.
+  const sig=curves.map((cv,i)=>cv.id+':'+signs[i]).join('|');
+  return {key:'folVectorSmooth:'+sig, path:d, rule:'nonzero', seamless:false};
+}
+
+
+
+window.addEventListener('resize',()=>applyView());snap();applyView();setTimeout(()=>$('hint').style.opacity=.15,5000);
+</script>
+</body>
+</html>
